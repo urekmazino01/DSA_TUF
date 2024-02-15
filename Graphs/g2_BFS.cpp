@@ -24,6 +24,8 @@ vector<int> bfsf(int n,vector<int> adj[]){
         }
 
     }
+
+    return bfs;
 }
 
 int main(){
