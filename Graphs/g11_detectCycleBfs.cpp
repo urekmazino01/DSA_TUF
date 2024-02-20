@@ -25,6 +25,8 @@ bool detectCycle(int src,vector<int> adj[],int visited[]){
         return false;
         
     }
+
+
 bool isCycle(int n, vector<int> adj[]) {
         // Code here
     int visited[n];
