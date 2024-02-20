@@ -24,7 +24,9 @@ bool isCycle(int n, vector<int> adj[]) {
     for(int i=0;i<n;i++) visited[i] =0;
         
     for(int i=0;i<n;i++){
-        if(!visited[i])  return dfs(i,-1,adj,visited);
+        if(!visited[i]){
+            if(dfs(i,-1,adj,visited)) return true;
+        }
     }
     return false;
         
